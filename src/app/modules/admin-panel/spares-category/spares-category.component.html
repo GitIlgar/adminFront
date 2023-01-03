@@ -1,0 +1,12 @@
+<form [formGroup]="sparesForm" (ngSubmit)="submitSpares()" class="auto__container">
+    <div class="title">Категория запчастей</div>
+    <div class="inputs">
+        <div class="input__block">
+            <input formControlName="name" type="text" placeholder="Название" class="input">
+        </div>
+    </div>
+    <div (keypress)="submitSpares()" class="button__block">
+        <button class="button">Добавить</button>
+    </div>
+</form>
+

@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face
+  font-family: GeometriaMedium
+  src: url(./fonts/Geometria-Medium.ttf)
+@font-face 
+  font-family: GeometriaRegular
+  src: url(./fonts/Geometria-Regular.ttf)
+
+@mixin input()
+  width: 339px
+  height: 60px
+  box-shadow: -5px 4px 10px rgba(0, 0, 0, 0.25)
+  border-radius: 10px
+  outline: none
+  border: none
+  font-size: 30px
+  line-height: 45px
+  color: rgba(0, 0, 0, 0.726)
+  padding-left: 16px
+  &::placeholder
+      color: rgba(0, 0, 0, 0.3)
+@mixin button()
+  width: 250px
+  height: 45px
+  font-size: 24px
+  line-height: 30px
+  background: #FFFEFE
+  box-shadow: -5px 4px 10px rgba(0, 0, 0, 0.25)
+  border-radius: 10px
+  border: none
+  cursor: pointer
+
+  
+
+html body
+  margin: 0
+  font-family: GeometriaRegular
+  background: #F5F5F5

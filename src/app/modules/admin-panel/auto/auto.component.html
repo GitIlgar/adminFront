@@ -1,0 +1,17 @@
+<form [formGroup]="autoForm" (ngSubmit)="submitAuto()" class="auto__container">
+    <div class="title">Авто</div>
+    <div class="inputs">
+        <div class="input__block">
+            <input formControlName="brand" type="text" placeholder="Бренд" class="input">
+        </div>
+        <div class="input__block">
+            <input formControlName="model" type="text" placeholder="Модель" class="input">
+        </div>
+        <div class="input__block">
+            <input formControlName="generation" type="text" placeholder="Поколение" class="input">
+        </div>
+    </div>
+    <div (keypress)="submitAuto()" class="button__block">
+        <button class="button">Добавить</button>
+    </div>
+</form>
